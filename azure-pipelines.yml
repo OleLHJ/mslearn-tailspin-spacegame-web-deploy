@@ -98,7 +98,7 @@ stages:
             artifact: drop
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
-            retryCountOnTaskFailure: 10
+            retryCountOnTaskFailure: 5
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appType: 'webAppLinux'
@@ -124,7 +124,7 @@ stages:
             artifact: drop
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
-            retryCountOnTaskFailure: 10
+            retryCountOnTaskFailure: 5
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appType: 'webAppLinux'
