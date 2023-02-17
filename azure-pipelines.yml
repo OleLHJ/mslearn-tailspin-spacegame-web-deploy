@@ -93,5 +93,6 @@ stages:
             retryCountOnTaskFailure: 10
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
+              appType: 'webAppLinux'
               appName: '$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
